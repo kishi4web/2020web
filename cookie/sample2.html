@@ -27,7 +27,7 @@ function getCookie(cname) {
 
 function checkCookie() {
   var user=getCookie("username");
-  if (user != "") {
+  if (user != "" || user !=null) {
     alert("また見てくれてありがとう！" + user);
   } else {
      user = prompt("名前を教えてください:","");
@@ -47,7 +47,7 @@ function delCookie()
   //有効期限を過去に設定
   document.cookie = "username=;expires=" + day.toGMTString();
   //ページをリロード
-  location.reload();
+  //location.reload();
 }
 
 </script>
