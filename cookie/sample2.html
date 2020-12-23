@@ -27,6 +27,7 @@ function getCookie(cname) {
 
 function checkCookie() {
   var user=getCookie("username");
+  console.log(user);
   if (user != "" ) {
     alert("また見てくれてありがとう！" + user);
   } else {
@@ -45,7 +46,8 @@ function delCookie()
   //過去の日付データ（1970年1月1日00:00:00）をセット
   day.setTime(0);
   //有効期限を過去に設定
-  document.cookie = "username=;expires=" + day.toGMTString();
+  //document.cookie = "username=;expires=" + day.toGMTString();
+  document.cookie = "username=;max-age=0"
   //ページをリロード
   //location.reload();
 }
