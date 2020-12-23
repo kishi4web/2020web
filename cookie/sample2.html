@@ -41,18 +41,20 @@ function checkCookie() {
 
 function delCookie()
 {
+  alert("del");
   //日付データを作成
   var day = new Date();
   //過去の日付データ（1970年1月1日00:00:00）をセット
   day.setTime(0);
   //有効期限を過去に設定
   //document.cookie = "username=;expires=" + day.toGMTString();
-  document.cookie = "username=;max-age=0";
+  document.cookie = "username=; max-age=0";
   console.log("del");
-  console.log(document.cookie);
+   alert(document.cookie);
   //ページをリロード
   //location.reload();
 }
+  
 
 </script>
 </head>
