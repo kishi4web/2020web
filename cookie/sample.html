@@ -28,9 +28,9 @@ function getCookie(cname) {
 function checkCookie() {
   var user=getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+    alert("また見てくれてありがとう！" + user);
   } else {
-     user = prompt("Please enter your name:","");
+     user = prompt("名前を教えてください:","");
      if (user != "" && user != null) {
        setCookie("username", user, 30);
      }
