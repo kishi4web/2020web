@@ -27,7 +27,7 @@ function getCookie(cname) {
 
 function checkCookie() {
   var user=getCookie("username");
-  if (user != "" || user !=null) {
+  if (user != "" ) {
     alert("また見てくれてありがとう！" + user);
   } else {
      user = prompt("名前を教えてください:","");
