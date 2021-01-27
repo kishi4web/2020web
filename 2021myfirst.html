@@ -5,17 +5,20 @@
   </head>
   <body>
     <h1></h1>
-    <button>Shoy My Name</button>
+    <button>Show your name</button>
     
-    <script>let myButton = document.querySelector('button');
+    <script>
+      
+let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
       
 function setUserName() {
-  let myName = prompt('あなたの名前を入力してください。');
+  let myName = prompt('Enter your name');
   myHeading.textContent = myName;
   
 }
-
+setUserName();
+ 
     </script>
   </body>
 </html>
